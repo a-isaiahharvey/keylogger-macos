@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Debug Keylogger",
+            "program": "${workspaceFolder:Keylogger}/.build/debug/Keylogger",
+            "args": [],
+            "cwd": "${workspaceFolder:Keylogger}",
+            "preLaunchTask": "swift: Build Debug Keylogger"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Release Keylogger",
+            "program": "${workspaceFolder:Keylogger}/.build/release/Keylogger",
+            "args": [],
+            "cwd": "${workspaceFolder:Keylogger}",
+            "preLaunchTask": "swift: Build Release Keylogger"
+        }
+    ]
+}
